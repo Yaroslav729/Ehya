@@ -1,0 +1,75 @@
+.navbar
+  font-family: "Open Sans", sans-serif
+
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 69px
+    &-right
+      display: flex
+      margin: 30px 0
+
+  &-menu
+    display: flex
+    list-style-type: none
+    align-items: center
+    padding-left: 0
+    margin: 0
+
+
+    &__item
+      margin-right: 23px
+
+    &__item:nth-last-child(1)
+      margin-right: 64px
+
+    &__link
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      text-decoration: none
+      color: #183B56
+
+
+  &__button
+    position: relative
+    padding: 11px 29px
+    border: 2px solid #1565D8
+    box-sizing: border-box
+    border-radius: 8px
+    background-color: white
+    color: #1565D8
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    margin-right: 7px
+    letter-spacing: 1px
+    cursor: pointer
+
+  &__button:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 0
+    background: rgba(21, 101, 216, 1)
+    transition: all 1s ease
+
+  &__button:hover:before
+    height: 100%
+    opacity: 1%
+
+  &__button:active
+    transition: .5s
+    box-shadow: 0 1px 4px rgba(21, 101, 216, 1),-23px 0 20px -23px rgba(21, 101, 216, .8),23px 0 20px -23px rgba(21, 101, 216, .8),0 0 40px rgba(21, 101, 216, .1) inset
+
+
+
+.logo
+  &__image
+    width: 90px
+    margin-left: -7px
